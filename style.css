@@ -3,7 +3,8 @@ body {
   margin-top: 50px;
 }
 
-header { 
+header {
+  
   display: flex;
   position: fixed;
   top: 0;
