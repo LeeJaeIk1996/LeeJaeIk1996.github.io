@@ -26,12 +26,10 @@ header li {
         margin-left: 20px;
 }
 section {
-        height: 100vh;
-        border: 1px solid black;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-color: #F5F5DC;
-        font-family: cursive;
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
