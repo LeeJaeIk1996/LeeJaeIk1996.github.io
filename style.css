@@ -25,12 +25,12 @@ header li {
         margin-left: 20px;
 }
 section {
-        background-color: #F5F5DC;
         height: 100vh;
         border: 1px solid black;
         display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
+        background-color: #F5F5DC;
         font-family: cursive;
 }
