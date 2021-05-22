@@ -26,7 +26,7 @@ header li {
 section {
         height: 100vh;
         border: 1px solid black;
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
