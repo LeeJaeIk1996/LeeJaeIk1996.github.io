@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  
+  color: white;
   display: flex;
   position: fixed;
   top: 0;
