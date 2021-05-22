@@ -24,7 +24,8 @@ header li {
         margin-left: 20px;
 }
 section {
-        font-size: cursive;
+        font-size: 10px;
+        font-family: cursive;
         height: 100vh;
         border: 1px solid black;
         display: block;
