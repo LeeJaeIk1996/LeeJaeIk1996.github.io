@@ -2,22 +2,23 @@
 <html>
   <head>
     <meta charset="urf-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1,maximum-scale=1">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
     <style>
       * {margin:0; padding: 0;}
       body {width: 960px; margin: 0 auto; overflow: hidden; }
-      header {width: 260px; float: left;}
-      article { width: 700px; float: right;}
+      #menu {width: 260px; float: left;}
+      #section { width: 700px; float: right;}
       @media screen and {max-width: 767px} {
         body {width: auto}
-        header {width: auto; float: none; }
-        article{width: auto; float: none; }
+        #menu {width: auto; float: none; }
+        #section{width: auto; float: none; }
+      }
     </style>  
     <title> JaeIk Lee </title>
     
   </head>
   <body>
-    <div>
+    <div id="menu">
     <header>
        <nav>
          <p> JaeIk Lee </p>
@@ -31,7 +32,7 @@
     </header>
          
     <section>
-     <article>
+     <div id="section">
     <img src="https://user-images.githubusercontent.com/84573261/119156031-c8af8300-ba8e-11eb-83ba-09903327e871.jpg" 
          width="300" height="300">
       <h1> About Me </h1>
@@ -49,7 +50,7 @@
         <p> Tel: 010-4768-5189 </p>
         <p> <a href="mailto:ly7kdd@kangwon.ac.kr"> Email: ly7kdd@kangwon.ac.kr </a> </p>
        
-      </article>
+      </div>
           </section>
         
         </div>
