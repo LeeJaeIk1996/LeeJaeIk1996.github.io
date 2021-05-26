@@ -10,13 +10,18 @@
       header * { display: inline; height: 50px; }
       header ul { padding: 0;}
       header li { margin-left: 20px;}
-      
+      #picture { width:260px; float: left;}
+      #write { width: 700px; float: right;}
+      @media screen and {max-width: 767px} {
+        #picture{ width: auto; float: none; }
+        #write { width: auto; float: none; }
+      }
     </style>
     <title> JaeIk Lee </title>
     
   </head>
   <body>
-    <div>
+    
     <header>
        <nav>
          <p> JaeIk Lee </p>
@@ -34,6 +39,7 @@
     <img src="https://user-images.githubusercontent.com/84573261/119156031-c8af8300-ba8e-11eb-83ba-09903327e871.jpg" 
          width="300" height="300">
       </div>
+      <div id="write">
       <h1> About Me </h1>
       <p> I am Jaeik Lee majoring in computer engineering at Kangwon National University.
         <br> Currently, I am studying algorithms using JAVA, and I am studying web programming <br>
@@ -48,8 +54,7 @@
        <h1> Contect </h1>
         <p> Tel: 010-4768-5189 </p>
         <p> <a href="mailto:ly7kdd@kangwon.ac.kr"> Email: ly7kdd@kangwon.ac.kr </a> </p>
+      </div>
      </section>
-        
-        </div>
   </body>
 </html>
