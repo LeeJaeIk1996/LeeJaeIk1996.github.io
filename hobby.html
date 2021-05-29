@@ -20,14 +20,14 @@
       .baseball { float:none; width : 500px; height : 300px; }
       .bowling { float:none; width : 500px; height : 300px; }
       .reading { float:none; width: 500px; height : 300px; }
-    #hobby { width: 100px; height: 100px; background-color:#FFFF00; color:#000000; }
-    #hobby:hover { font-weight: bold; background-color: #00FF00; color:#FF0000;}
+    #hobby { color:#000000; }
+    #hobby:hover { font-weight: bold; color:#FF4500;}
      #base { color:#000000; }
-    #base:hover { font-weight: bold; background-color: #8B0000; }
+    #base:hover { font-weight: bold; color:#FF4500; }
      #bowl { color:#000000; }
-    #bowl:hover { font-weight: bold; background-color: #8B0000; }
+    #bowl:hover { font-weight: bold; color:#FF4500; }
      #read { color:#000000; }
-    #read:hover { font-weight: bold; background-color: #8B0000; }
+    #read:hover { font-weight: bold; color:#FF4500; }
    
       @media screen and (max-width: 767px) {
        body { width: auto; }
@@ -40,8 +40,13 @@
     <script>
       $(document).ready(function () {
         $('#hobby').hover(function () {$('#hobby').addClass('hover’);}, 
-           function () {$('#hobby').removeClass('hover’);}
-      );
+           function () {$('#hobby').removeClass('hover’);});
+        $('#base').hover(function () {$('#base').addClass('hover’);}, 
+          function () {$('#base').removeClass('hover’);});
+        $('#bowl').hover(function () {$('#bowl').addClass('hover’);}, 
+          function () {$('#bowl').removeClass('hover’);});
+        $('#read').hover(function () {$('#read').addClass('hover’);}, 
+          function () {$('#read').removeClass('hover’);});    
 });
     </script>
  </head>
