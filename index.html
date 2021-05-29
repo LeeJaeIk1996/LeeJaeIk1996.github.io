@@ -50,9 +50,17 @@ footer {
        
        #picture { width: auto; float: none; }
        #write { width : auto; float : none;}  
-          
+       header { font-size: small;}   
 }
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function () {
+        $('button').click(function () {
+          $('.Plan').fadeToggle('slow');
+          });
+      });
+    </script>
     <title> JaeIk Lee </title>
     
   </head>
@@ -76,27 +84,39 @@ footer {
          <img src="https://user-images.githubusercontent.com/84573261/119156031-c8af8300-ba8e-11eb-83ba-09903327e871.jpg" 
            width="100%" height="546">
       </div>
-      <div id="write">
+      <div id="About">
       <h1 style="color: #CD853F"> About Me </h1>
       <p> I am Jaeik Lee majoring in computer engineering at Kangwon National University.
         <br> Currently, I am studying algorithms using JAVA, and I am studying web programming <br>
         and Django individually. <br> My hobbies are baseball and bowling. 
        </p>
-        <br>
+      <br>
+      </div>
+      
+      <div id="Personal">
        <h2 style="color: #CD853F"> Personal Details </h2>
         <p> Name: Jaeik Lee </P>
         <p> Date of Birth: 09 Mar, 1996 <p>
         <p> Nationality: Korean </p>
       <br>
+      </div>
+         
+      <div id="Education">  
       <h2 style="color: #CD853F"> Education </h2> 
         <p> <a href="http://www.kangwon.ac.kr"> Kangwon National University </a> , Chuncheon, South Korea
           <br> Computer and Communication Engineering </p> 
       <br>
+      </div>
+         
+      <div id="Activity">
       <h2 style="color: #CD853F"> Activity </h2>
       <p> Mar.2020 ~ current: Vice President of the baseball club </p>
       <p> July.2019: Acquiring an Computer Specialist in Spreadsheet & Database Level -1 </p>
       <p> Sep.2019 ~ Dec 12: Volunteer in Kangwon National University hospital </p>
       <br>
+      </div>
+      
+      <div id="Skill">
       <h2 style="color: #CD853F"> Skills And Certificates </h2>
       <h4 style="color: #8B4513"> 1.Computer Skills </h4>
       <p> Computer Specialist in Spreadsheet & Database Level -1 </p>
@@ -105,10 +125,14 @@ footer {
       <p> Korean - Native Tongue </p>
       <p> Chinese - Elementary </p>
       <br>
+      </div>
+         
+      <div id="Interest">   
       <h2 style="color: #CD853F"> Interests And Activities </h2>
       <p> Baseball </p>
       <p> Bowling </p>
       </div>
+      
       </section>  
        
       <footer>
