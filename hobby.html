@@ -20,15 +20,35 @@
       .baseball { float:none; width : 500px; height : 300px; }
       .bowling { float:none; width : 500px; height : 300px; }
       .reading { float:none; width: 500px; height : 300px; }
+     #hobby { font-color: #000000; }
+    #hobby.hover { font-weight: bold; font-color: #808000; }
+     #base { font-color: #000000; }
+    #base.hover { font-weight: bold; font-color: #808000; }
+     #bowl { font-color: #000000; }
+    #bowl.hover { font-weight: bold; font-color: #808000; }
+     #read { font-color: #000000; }
+    #read.hover { font-weight: bold; font-color: #808000; }
+   
       @media screen and (max-width: 767px) {
        body { width: auto; }
        .baseball {float:none; width: 100%; height: 100%; }
        .bowling {float:none; width: 100%; height: 100%; }
        .reading {float:none; width: 100%; height: 100%; }
-      }
-      
-   
+      } 
   </style>
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function () {
+       $('#hobby').hover(function () {$('#hobby').addClass('hover’);}, 
+          function () {$('#hobby').removeClass('hover’);});
+       $('#base').hover(function () {$('#base').addClass('hover’);}, 
+          function () {$('#base').removeClass('hover’);});
+       $('#bowl').hover(function () {$('#bowl').addClass('hover’);}, 
+          function () {$('#bowl').removeClass('hover’);});
+       $('#read').hover(function () {$('#read').addClass('hover’);}, 
+          function () {$('#read').removeClass('hover’);});                                        
+      });
+    </script>
  </head>
   <body>
      <header>
@@ -41,10 +61,12 @@
       </nav>
     </header>
        <section>
+        <div id="hobby">
         <h3 style="color: #CD853F"> My hobby </h3>
         <p> My hobbies are baseball, bowling, and reading. I like baseball the most among my <br>
          hobbies, and I continue to enjoy my hobby through baseball clubs. </p>
         <br>
+        </div>
         
         <img class="baseball" src="https://user-images.githubusercontent.com/84573261/119733881-170cb980-beb5-11eb-8599-0967c978bb44.jpg" >
         <div id="base">
@@ -56,10 +78,10 @@
          <br>
         <p> Mar.2020 ~ Current: Vice President of the Amateur baseball club </p>
         <p> May.2017 ~ Current: Joining Incheon Amateur Baseball club </p>
-        <p> Mar.2012 ~ Mar.2014: Amateur baseball club member </p> 
-        
+        <p> Mar.2012 ~ Mar.2014: Amateur baseball club member </p>   
         </div>
         <br>
+        
         <img class="bowling" src="https://user-images.githubusercontent.com/84573261/119733821-03615300-beb5-11eb-8547-a1429bb8ca93.PNG" >
         <div id="bowl">
          <h1 style="color: #CD853F"> Bowling </h1>
